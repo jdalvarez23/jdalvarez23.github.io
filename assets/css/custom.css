@@ -1,0 +1,92 @@
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    border-top: 10px solid #2ecc71;
+    border-bottom: 10px solid #2ecc71;
+}
+
+.text-custom {
+    color: #2ecc71;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+.nav-link {
+    /* font-size: 16px; FOR REGULAR TEXT */
+    /* FOR FA ICONS */
+    font-size: 24px;
+    color: #6c757d !important;
+}
+
+.nav-link img {
+    width: 100px;
+}
+
+.nav-link:hover {
+    color: #000 !important;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar.bg-light {
+    border: none;
+}
+
+.intro-header h1 {
+    font-size: 2.75rem;
+    text-transform: none;
+}
+
+.intro-header h4 {
+    text-transform: none;
+    font-weight: lighter;
+}
+
+.intro-header h1 span {
+    font-weight: 100;
+}
+
+.about-section li {
+    font-size: 18px;
+    color: #000;
+}
+
+.list-group-image {
+    width: 100%;
+}
+
+.list-group-item p {
+    font-size: 1rem;
+}
+
+.list-group-item .badge {
+    font-size: 100%;
+}
+
+.contact-section h4 {
+    text-transform: none;
+    font-weight: lighter;
+}
+
+.contact-section a {
+    font-size: 18px;
+}
+
+.contact-form-label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact-section form .form-control {
+    /* border: 2px solid #2ecc71; */
+    font-size: 1rem;
+}

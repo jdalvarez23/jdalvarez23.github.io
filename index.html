@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Jose D. Alvarez</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/lux/bootstrap.min.css">
+  <!-- Font CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+    integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jdalvarez23" target="_blank">
+              <i class="fab fa-github"></i>
+              <!-- <span class="sr-only">(current)</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:jdalvarez23@gmail.com" target="_blank"><i
+                class="fas fa-envelope"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.upwork.com/o/profiles/users/_~01eab60423f9b3d68c/"
+              target="_blank"><img
+                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9ImFydHdvcmtfb3V0bGluZWRfIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDEwMi40IDMwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMDIuNCAzMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsOiM0OTQ5NDk7fS5zdDF7ZmlsbDojNkZEQTQ0O308L3N0eWxlPjx0aXRsZT51cHdvcmtfdXNlX29uX3doaXRlPC90aXRsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNNjUuNCw2LjljLTQuNSwwLTguMSwzLjYtOC4xLDguMWMwLDQuNSwzLjYsOC4xLDguMSw4LjFjNC41LDAsOC4xLTMuNiw4LjEtOC4xYzAsMCwwLDAsMCwwbDAsMEM3My41LDEwLjUsNjkuOSw2LjksNjUuNCw2Ljl6IE02NS40LDE5LjhjLTIuNiwwLTQuOC0yLjEtNC44LTQuOHMyLjEtNC44LDQuOC00LjhjMi42LDAsNC44LDIuMSw0LjgsNC43bDAsMEM3MC4yLDE3LjYsNjguMSwxOS44LDY1LjQsMTkuOEM2NS40LDE5LjgsNjUuNCwxOS44LDY1LjQsMTkuOHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNODMuNCwxMC44Yy0yLjMsMC00LjIsMS45LTQuMiw0LjJ2Ny43aC0zLjVWNy40aDMuNXYyLjRjMS0xLjUsMi43LTIuNCw0LjUtMi40aDEuMXYzLjRMODMuNCwxMC44eiIvPjxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iNDguMiw3LjQgNTAuOCwxOCA1My43LDcuNCA1Ny4xLDcuNCA1Mi43LDIyLjcgNDkuMiwyMi43IDQ2LjUsMTIgNDMuOCwyMi43IDQwLjMsMjIuNyAzNS45LDcuNCAzOS4zLDcuNCA0Mi4yLDE4IDQ0LjksNy40ICIvPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik05NSwxNC40YzIuNi0xLjQsNC4xLTQuMSw0LjEtNy4xaC0zLjRjMCwyLjYtMi4xLDQuNi00LjYsNC42aC0wLjVWMGgtMy41djIyLjdoMy41di03LjJIOTFjMC40LDAsMC44LDAuMiwxLDAuNWw0LjksNi43aDQuMkw5NSwxNC40eiIvPjxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0yNy42LDYuOWMtMy44LDAtNi43LDIuNS03LjksNi41Yy0xLjgtMi43LTMuMS01LjctNC04LjhoLTQuMXYxMC42YzAsMi4xLTEuNywzLjgtMy44LDMuOHMtMy44LTEuNy0zLjgtMy44VjQuN0gwdjEwLjZjMCw0LjMsMy41LDcuOSw3LjksNy45czcuOS0zLjUsNy45LTcuOXYtMS44YzAuOCwxLjcsMS44LDMuMywyLjksNC44TDE2LjIsMzBoNC4ybDEuOC04LjVjMS42LDEuMSwzLjUsMS43LDUuNSwxLjdjNC41LDAsOC4xLTMuNiw4LjEtOC4xQzM1LjcsMTAuNiwzMi4xLDYuOSwyNy42LDYuOUwyNy42LDYuOXogTTI3LjYsMTkuMWMtMS43LTAuMS0zLjMtMC43LTQuNi0xLjhsMC4zLTEuNnYtMC4xYzAuMy0xLjcsMS4zLTQuNiw0LjItNC42YzIuMi0wLjEsNCwxLjcsNC4xLDMuOWMwLjEsMi4yLTEuNyw0LTMuOSw0LjFMMjcuNiwxOS4xTDI3LjYsMTkuMXoiLz48L3N2Zz4="
+                alt="Upwork"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" style="cursor: pointer;">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="cursor: pointer;">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="cursor: pointer;">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+  <!-- Main Page Content -->
+  <div class="container mb-5">
+    <!-- Header -->
+    <div class="intro-header mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Hi, I'm <span class="text-custom">Jose</span>.</h1>
+          <h4 class="text-muted mt-3">I am a web developer living and learning in Chicago, Illinois. I strive to find
+            new, and more effective, ways to solve problems.</h4>
+        </div>
+      </div>
+    </div>
+    <!-- About Me -->
+    <div class="about-section mt-5">
+      <h1 class="text-custom">About Me</h1>.
+      <!-- Skills -->
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Front End</h4>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+            <li>Swift (Mobile Development)</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Back End</h4>
+          <ul>
+            <li>PHP</li>
+            <li>Java</li>
+            <li>Node.js / Express.js</li>
+            <li>MySQL</li>
+            <li>Dexie.js (IndexedDB)</li>
+            <li>Google APIs</li>
+            <li>Firebase</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Tools</h4>
+          <ul>
+            <li>Github</li>
+            <li>Gitlab</li>
+            <li>XAMPP</li>
+            <li>phpMyAdmin</li>
+            <li>Xcode</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Projects -->
+    <div class="projects-section mt-5">
+      <h1 class="text-custom">Projects</h1>.
+      <!-- Projects Container -->
+      <div class="list-group">
+        <!-- BUSM Database -->
+        <a href="https://github.com/jdalvarez23/BUSMProject" class="list-group-item list-group-item-action"
+          target="_blank">
+          <div class="row">
+            <div class="col-md-3">
+              <img class="list-group-image" src="assets/img/robloxDatabase/thumbnail1.png" alt="Roblox Group Dashboard">
+            </div>
+            <div class="col-md-9">
+              <h4>Roblox Group Dashboard</h4>
+              <p>A project created to facilitate the management of a gaming group in
+                Roblox. It functions as a database, keeping track of promotions, users, and military branches in the
+                group. It uses Firebase's Realtime Database to store all of the necessary information, Firebase
+                Authentication to allow users to sign in to view the data, and the Roblox Web APIs to conduct certain
+                group management operations.</p>
+              <div>
+                <span class="badge badge-success">JavaScript</span>
+                <span class="badge badge-success">jQuery</span>
+                <span class="badge badge-success">Firebase APIs</span>
+                <span class="badge badge-success">Roblox APIs</span>
+                <span class="badge badge-success">Node.js (Server)</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- Chemistry Quiz App -->
+        <a href="https://github.com/2501CodeLab/chemQuizApp" class="list-group-item list-group-item-action"
+          target="_blank">
+          <div class="row">
+            <div class="col-md-3">
+              <img class="list-group-image" src="assets/img/projectThumbnails/chemistryQuizAppThumbnail1.png"
+                alt="Chemistry Quiz App">
+            </div>
+            <div class="col-md-9">
+              <h4>Chemistry Quiz App</h4>
+              <p>The Chemistry Quiz App is a mobile-responsive web application that was created at the request of a
+                chemistry teacher who wants a more interactive way to teach ions to her students. Using Google's
+                Spreadsheet API the app pulls the questions from a Google spreadsheet owned by the teacher, and is then
+                displayed in a quiz format on the app. IndexedDB is used to store the questions the first time the user
+                visits the web app.</p>
+              <div>
+                <span class="badge badge-success">Google APIs (Spreadsheet)</span>
+                <span class="badge badge-success">Dexie.js (IndexedDB)</span>
+                <span class="badge badge-success">JavaScript</span>
+                <span class="badge badge-success">jQuery</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- TechDealz -->
+        <a href="https://techdealz.000webhostapp.com/" class="list-group-item list-group-item-action" target="_blank">
+          <div class="row">
+            <div class="col-md-3">
+              <img class="list-group-image" src="assets/img/projectThumbnails/techdealzThumbnail1.png" alt="TechDealz">
+            </div>
+            <div class="col-md-9">
+              <h4>TechDealz: An e-commerce site</h4>
+              <p>TechDealz is a mobile-friendly e-commerce website. This website was created as an experimental project
+                to further my knowledge of PHP and MySQL databases. Information is pulled from a MySQL database using
+                PHP and SQL statements to display products, reviews, and more. Users are able to add items to their
+                carts (either as a "Guest" or as a registered user). More features include an admin dashboard where
+                admins can view, add, edit, or delete products, brands, categories, orders, and payments. Users are able
+                to checkout through PayPal. Users also have a dashboard where they can edit their account settings, view
+                their previous orders, set/edit their billing address, and view account information.
+              </p>
+              <div>
+                <span class="badge badge-success">PHP</span>
+                <span class="badge badge-success">MySQL</span>
+                <span class="badge badge-success">JavaScript</span>
+                <span class="badge badge-success">jQuery</span>
+                <span class="badge badge-success">PayPal API</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- iOS Payroll App -->
+        <a href="https://github.com/jdalvarez23/iOS-Payroll-App" class="list-group-item list-group-item-action"
+          target="_blank">
+          <div class="row">
+            <div class="col-md-3">
+              <img class="list-group-image"
+                src="https://raw.githubusercontent.com/jdalvarez23/iOS-Payroll-App/master/README%20Screenshots/Simulator%20Screen%20Shot%20-%20iPhone%208%20-%202019-02-16%20at%2021.39.08.png"
+                alt="iOS Payroll App">
+            </div>
+            <div class="col-md-9">
+              <h4>iOS Payroll App</h4>
+              <p>An iOS mobile app that will calculate your gross & net earnings when you fill out a simple form. The
+                app will create statements containing the information submitted and will display your information on a
+                separate screen.
+              </p>
+              <div>
+                <span class="badge badge-success">Swift</span>
+                <span class="badge badge-success">Xcode</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- Contact Me -->
+    <div class="contact-section mt-5">
+      <h1 class="text-custom">Contact Me</h1>
+      <h4>Feel free to contact me, I'd love to collaborate!</h4>
+      <div class="row">
+        <!-- Contact Form -->
+        <div class="col-md-6">
+          <form class="mt-3 mb-5">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="inputName" class="text-custom contact-form-label">Name</label>
+                  <input type="text" class="form-control" id="inputName" name="Name" placeholder="Enter name here">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="inputEmail" class="text-custom contact-form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail" name="Email"
+                    placeholder="Enter email address here">
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="messageTextarea" class="text-custom contact-form-label">Message</label>
+                  <textarea class="form-control" id="messageTextarea" rows="5"
+                    placeholder="Enter message here"></textarea>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-success" style="width: 100%;">Submit</button>
+          </form>
+        </div>
+        <!-- Contact Information -->
+        <div class="col-md-6">
+          <h3 class="mt-3">Email</h3>
+          <a href="mailto:jdalvarez23@gmail.com">jdalvarez23@gmail.com</a>
+          <h3 class="mt-3">Github</h3>
+          <a href="https://github.com/jdalvarez23" target="_blank">github.com/jdalvarez23</a>
+          <h3 class="mt-3">Upwork</h3>
+          <a href="https://www.upwork.com/o/profiles/users/_~01eab60423f9b3d68c/" target="_blank">Jose Alvarez</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center mt-5"><span class="text-custom">JOSE D. ALVAREZ</span> © 2019</p>
+  </div>
+
+
+  <!-- Scripts -->
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+
+</html>
