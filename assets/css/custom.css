@@ -90,3 +90,10 @@ body {
     /* border: 2px solid #2ecc71; */
     font-size: 1rem;
 }
+
+/* will only affect tablets and small devices */
+@media (max-width: 768px) { 
+    .list-group-item .badge {
+        margin-top: 5px;
+    }
+ }
